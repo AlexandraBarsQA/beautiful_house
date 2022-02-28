@@ -1,0 +1,89 @@
+.form-users {
+  width: 100%;
+}
+
+.form-users__field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  @include _992 {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+  }
+}
+
+.form-users__field:first-of-type {
+  width: 100%;
+}
+
+.form-users__field--user {
+  display: block;
+}
+
+.form-users__field--user .field-item {
+  width: 100%;
+
+  @include _992 {
+    margin-top: 30px;
+  }
+}
+
+.form-users__pay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 125px;
+  margin-top: 50px;
+  margin-bottom: 64px;
+
+  @include _992 {
+    width: 100%;
+    padding-right: 0;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 64px;
+    flex-direction: column;
+  }
+}
+
+.form-users__pay > div {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @include _596 {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.form-users__pay > div > p {
+  @include _596 {
+   margin-right: 20px;
+  }
+}
+
+.form-users__pay ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.form-users__pay li {
+  margin-right: 12px;
+}
+
+.form-users__btn {
+  @include _992 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: 7px;
+  }
+}

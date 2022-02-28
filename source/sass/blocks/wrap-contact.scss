@@ -1,0 +1,23 @@
+.wrap-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 35px;
+
+  @include _1280 {
+    justify-content: space-around;
+  }
+
+  @include _1060 {
+    width: 300px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+  @include _1280 {
+    .wrap-contact__list {
+      padding-bottom: 50px;
+  }
+}

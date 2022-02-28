@@ -1,0 +1,17 @@
+.product-link {
+  font-family: inherit;
+  font-size: 15px;
+  color: #c58e4c;
+  margin: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.product-link__active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-link--title {
+  font-size: calc(26px + 8*(100vw/1600));
+}

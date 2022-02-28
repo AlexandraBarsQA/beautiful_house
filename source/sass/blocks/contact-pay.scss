@@ -1,0 +1,23 @@
+.contact-pay {
+  width: 790px;
+  margin: 0 auto;
+
+  @include _992 {
+    width: 70%;
+  }
+
+  @include _596 {
+    width: 100%;
+  }
+}
+
+.contact-pay h3 {
+  font-family: inherit;
+  font-size: 21px;
+  font-weight: 300;
+  color: #481300;
+}
+
+.contact-pay__form {
+  margin-top: 40px;
+}

@@ -1,0 +1,154 @@
+.slider-general {
+  position: relative;
+  width: 100%;
+  min-height: 70%;
+}
+
+.slider-general__list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  list-style-type: none;
+  height: 520px;
+}
+
+.slider-general__item {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+/*
+
+.slider-general__item img {
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.slider-general__item:nth-child(1) img {
+  animation-name: move;
+  animation-delay: 0s;
+}
+
+.slider-general__item:nth-child(2) img {
+  animation-name: move;
+  animation-delay: 5s;
+}
+
+.slider-general__item:nth-child(3) img {
+  animation-name: move;
+  animation-delay: 10s;
+}
+
+.slider-general__item:nth-child(4) img {
+  animation-name: move;
+  animation-delay: 15s;
+}
+
+.slider-general__item:nth-child(5) img {
+  animation-name: move;
+  animation-delay: 20s;
+}
+
+*/
+
+
+
+/* Кнопки вперед и назад */
+
+
+
+
+
+
+
+#img-1:checked ~ .slider-general__list .slider-general__item--1 {
+  display: block;
+}
+
+#img-2:checked ~ .slider-general__list .slider-general__item--2 {
+  display: block;
+}
+
+#img-3:checked ~ .slider-general__list .slider-general__item--3 {
+  display: block;
+}
+
+#img-4:checked ~ .slider-general__list .slider-general__item--4 {
+  display: block;
+}
+
+#img-5:checked ~ .slider-general__list .slider-general__item--5 {
+  display: block;
+}
+
+#img-6:checked ~ .slider-general__list .slider-general__item--6 {
+  display: block;
+}
+
+#img-1:checked ~ .slider-general__dots .slider-general__dots-item--1,
+#img-2:checked ~ .slider-general__dots .slider-general__dots-item--2,
+#img-3:checked ~ .slider-general__dots .slider-general__dots-item--3,
+#img-4:checked ~ .slider-general__dots .slider-general__dots-item--4,
+#img-5:checked ~ .slider-general__dots .slider-general__dots-item--5,
+#img-6:checked ~ .slider-general__dots .slider-general__dots-item--6 {
+  background-color: #481300;
+}
+
+
+.slider-general__dots {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: 120px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -26px;
+}
+
+.slider-general__dots label {
+  font-size: 0;
+}
+
+.slider-general__dots-item {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #b6bbc1;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+
+  @include _1060 {
+    width: 8px;
+    height: 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+
+/* авторотация слайдов */
+
+
+@keyframes move {
+
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

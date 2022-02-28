@@ -1,0 +1,10 @@
+.footer-main {
+  width: 100%;
+  min-height: 320px;
+  background-image: url("../img/white-wave-invert.svg"), url("../img/wallpaper-bottom.jpg");
+  background-repeat: repeat-x;
+
+  @include _1280 {
+    background-repeat: repeat-x, repeat;
+  }
+}

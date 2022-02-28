@@ -1,0 +1,22 @@
+.headline {
+  position: relative;
+  font-family: inherit;
+  font-size: calc(26px + 8*(100vw/1600));
+  font-weight: 300;
+  color: #481300;
+}
+
+.headline__underline {
+  background-image: linear-gradient(#f0d9f1 60%, transparent 50%);
+  background-size: 100% 20px;
+  background-position: 0 115%;
+  background-repeat: no-repeat;
+}
+
+.headline__underline--bedroom {
+  background-image: linear-gradient(#f0d4d3 60%, transparent 50%);
+}
+
+.headline__underline--kitchen {
+  background-image: linear-gradient(#b4cbeb 60%, transparent 50%);
+}

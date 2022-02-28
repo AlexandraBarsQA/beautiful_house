@@ -1,0 +1,14 @@
+.footer-bottom {
+  width: 100%;
+}
+
+.footer-bottom p {
+  float: right;
+  margin-top: 43px;
+  margin-bottom: 50px;
+
+  @include _767 {
+    float: none;
+    text-align: center;
+  }
+}

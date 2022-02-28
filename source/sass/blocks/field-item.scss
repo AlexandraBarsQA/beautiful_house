@@ -1,0 +1,108 @@
+.field-item {
+  display: block;
+  width: 250px;
+  margin: 0;
+
+  @include _992 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+}
+
+.field-item label {
+  font-family: inherit;
+  font-size: 17px;
+}
+
+.field-item input[type="text"],
+.field-item input[type="tel"],
+.field-item input[type="email"],
+.field-item textarea {
+  position: relative;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -.3px;
+  color: #59361b;
+  border: 1px solid #59361b;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.field-item input[type="text"],
+.field-item input[type="tel"],
+.field-item input[type="email"] {
+  width: 250px;
+  height: 43px;
+
+  @include _992 {
+    width: 100%;
+  }
+}
+
+.field-item textarea {
+  width: 100%;
+  height: 142px;
+}
+
+.field-item__choice {
+  width: 300px;
+
+  @include _992 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @include _396 {
+    width: 100%;
+  }
+}
+
+.field-item__choice ul {
+  list-style-type: none;
+  padding-left: 25px;
+  margin-top: 20px;
+}
+
+.field-item__choice li {
+  margin-bottom: 15px;
+
+  @include _396 {
+    width: 70%;
+  }
+}
+
+.field-item__choice label {
+  position: relative;
+}
+
+.field-item__choice input[type="radio"] + label::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 1px solid #c1afa8;
+  border-radius: 50%;
+  top: 5px;
+  left: -25px;
+  cursor: pointer;
+}
+
+.field-item__choice input[type="radio"]:checked + label::before {
+  background-color: #c1afa8;
+}
+
+.field-item__notice {
+  font-family: inherit;
+  font-size: 17px;
+
+  @include _992 {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

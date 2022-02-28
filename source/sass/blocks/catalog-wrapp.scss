@@ -1,0 +1,37 @@
+.catalog-wrapp {
+  display: flex;
+  margin-top: 30px;
+
+  @include _596 {
+    flex-direction: column;
+  }
+}
+
+.catalog-wrapp--show {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 43px;
+
+  @include _1060 {
+    flex-direction: column;
+  }
+}
+
+.catalog-wrapp--brands {
+  margin-left: 185px;
+
+  @include _1370 {
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  @include _1060 {
+    display: block;
+  }
+
+  @include _767 {
+
+  }
+}

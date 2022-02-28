@@ -1,0 +1,40 @@
+.container {
+  max-width: 1400px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: 0 auto;
+
+  @include _1060 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include _396 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container--inner {
+  padding-left: 60px;
+  padding-right: 60px;
+
+  @include _1370 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include _496 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container--inner ul {
+  list-style-type: none;
+}
+
+.container--full {
+  padding-left: 30px;
+  padding-right: 30px;
+}

@@ -1,0 +1,105 @@
+.site-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include _1280 {
+    justify-content: flex-start;
+  }
+
+  @include _1180 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @include _816 {
+    justify-content: flex-start;
+  }
+
+  @include _596 {
+    width: 75%;
+  }
+
+  @include _496 {
+    display: block;
+    width: 200px;
+    margin: auto;
+  }
+
+  @include _396 {
+    flex-direction: column;
+  }
+}
+
+.site-nav li {
+  position: relative;
+  font-family: inherit;
+  font-size: 17px;
+  color: #000000;
+  text-transform: uppercase;
+  list-style-type: none;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include _1280 {
+    font-size: 17px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  @include _1180 {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+
+  @include _596 {
+    width: 130px;
+    font-size: 17px;
+  }
+}
+
+.site-nav a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a.site-nav__link-active {
+  color: #ffffff;
+  background-color: #f95785;
+  font-weight: 700;
+  line-height: 34px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.site-nav__item-active a {
+  color: #ffffff;
+}
+
+.site-nav__item--year::before {
+  position: absolute;
+  content: "";
+  width: 31px;
+  height: 28px;
+  top: -20px;
+  left: -5px;
+  background-image: url("../img/new-year.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include _1280 {
+    width: 28px;
+    height: 24px;
+    top: -17px;
+    left: -5px;
+  }
+
+  @include _596 {
+    width: 31px;
+    height: 28px;
+    top: -20px;
+    left: -5px;
+  }
+}

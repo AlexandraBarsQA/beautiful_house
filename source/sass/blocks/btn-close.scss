@@ -1,0 +1,35 @@
+.btn-close {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+
+  @include _596 {
+    position: absolute;
+    top: 65%;
+    right: 0;
+  }
+}
+
+.btn-close::after,
+.btn-close::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 20px;
+  top: 0;
+  background-color: #000000;
+}
+
+.btn-close::before {
+  transform: rotate(45deg);
+}
+
+.btn-close::after {
+  transform: rotate(-45deg);
+}

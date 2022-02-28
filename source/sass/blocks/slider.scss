@@ -1,0 +1,93 @@
+/* Слайд */
+.slick-slide{}
+/* Слайд активный */
+.slick-slide.slick-active{}
+/* Слайд основной */
+.slick-slide.slick-current{}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+
+/* Стрелка */
+.slick-arrow{}
+/* Стрелка влево */
+.slick-arrow.slick-prev{}
+/* Стрелка вправо */
+.slick-arrow.slick-next{}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
+
+/* Точки */
+.slick-dots {}
+.slick-dots li {}
+.slick-dots button {}
+
+
+/* Конкретный слайдер */
+.slider {
+  position: relative;
+}
+
+.slider .slick-arrow {
+  display: none;
+  font-size: 0;
+  outline: 0;
+  opacity: 0;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0px 5px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #b6bbc1;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 0;
+
+  @include _596 {
+    opacity: 0;
+  }
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: #481300;
+}
+
+.slider__item img {
+  max-width: 100%;
+/*
+  animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  */
+}
+
+
+/*
+@keyframes move {
+
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
+*/
+

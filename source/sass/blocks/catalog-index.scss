@@ -1,0 +1,98 @@
+.catalog-index {
+  width: 100%;
+  display: flex;
+  margin-top: 63px;
+  margin-bottom: 45px;
+
+  @include _1550 {
+    margin-top: 70px;
+    margin-left: 0;
+  }
+
+  @include _1370 {
+    display: block;
+  }
+
+  @include _596 {
+    margin-top: 40px;
+  }
+
+  @include _496 {
+    margin-top: 20px;
+  }
+}
+
+.catalog-index__photo-big {
+  text-align: center;
+  text-decoration: none;
+
+  @include _1370 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.catalog-index__img {
+  position: relative;
+  width: 630px;
+  margin-bottom: 10px;
+
+  @include _1370 {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  @include _767 {
+    width: 100%;
+  }
+}
+
+.catalog-index__img--kitchen img {
+  width: 100%;
+  height: auto;
+}
+
+.catalog-index__img--brands img {
+  width: auto;
+  height: 855px;
+
+  @include _767 {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.catalog-index--reverse .catalog-index__photo-big > div {
+  width: 725px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @include _767 {
+    width: 100%;
+  }
+}
+
+.catalog-index__img::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-image: url("../img/white-wave-invert.svg");
+  background-repeat: repeat-x;
+  background-position: 0 0;
+}
+
+  @include _1370 {
+    .catalog-index--reverse {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @include _1370 {
+    .catalog-index--reverse .catalog-3--reverse {
+      order: -1;
+    }
+  }

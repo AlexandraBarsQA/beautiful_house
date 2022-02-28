@@ -1,0 +1,93 @@
+.brands {
+  max-width: 382px;
+
+  @include _1370 {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  @include _396 {
+    width: 100%;
+  }
+}
+
+.brands__list {
+  width: 382px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 17px;
+
+  @include _1370 {
+    width: 100%;
+    margin: 17px auto;
+  }
+
+  @include _396 {
+    width: 180px;
+    text-align: center;
+  }
+}
+
+.brands__list li {
+  display: flex;
+  width: 160px;
+  list-style-type: none;
+  margin-bottom: 20px;
+  align-items: flex-end;
+
+  @include _1370 {
+    width: 200px;
+    padding-right: 20px;
+  }
+
+  @include _396 {
+    padding-right: 0;
+  }
+}
+
+.brands__img--potier {
+  width: 200%;
+  height: 120px;
+
+  @include _1370 {
+    width: 180%;
+  }
+
+  @include _992 {
+    width: 200%;
+  }
+
+  @include _496 {
+    width: 150%;
+  }
+
+  @include _396 {
+    width: 120%;
+    height: 90px;
+  }
+}
+
+.brands__img {
+  margin-bottom: 12px;
+}
+
+  @include _396 {
+    .brands__img img {
+      padding-left: 20px;
+    }
+  }
+
+    @include _396 {
+    .brands__img--potier img {
+      margin-left: -50px;
+    }
+  }
+
+    @include _396 {
+      .brands__list li:last-of-type a {
+        display: block;
+        text-align: center;
+    }
+  }
+

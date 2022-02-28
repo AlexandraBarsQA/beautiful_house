@@ -1,0 +1,159 @@
+.product-order {
+  position: relative;
+  width: 100%;
+  border-spacing: 2px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 0;
+  border-bottom: 2px solid #c1afa8;
+}
+
+.product-order__wrapp {
+  position: relative;
+  border-spacing: 2px;
+  overflow: hidden;
+  padding: 0;
+  margin: 30px auto 0;
+}
+
+.product-order__wrapp:first-of-type {
+  border-top: 2px solid #c1afa8;
+}
+
+.product-order__wrapp:last-of-type {
+  border-top: 2px solid #c1afa8;
+}
+
+.product-order__list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include _992 {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.product-order__list:first-of-type {
+  padding-top: 30px;
+}
+
+
+.product-order__item {
+  width: 410px;
+
+  @include _396 {
+    width: 100%;
+  }
+}
+
+.product-order__item a {
+  display: flex;
+  align-items: center;
+
+  @include _596 {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+}
+
+.product-order__item p {
+  margin-left: 25px;
+
+  @include _596 {
+    margin-left: 0;
+  }
+
+  @include _396 {
+    width: 100%;
+  }
+}
+
+.product-order__img {
+  max-width: 200px;
+
+  @include _596 {
+    margin: 0 auto;
+  }
+}
+
+.product-order__together {
+  position: relative;
+  width: 660px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 87px;
+
+  @include _1280 {
+    margin-left: 60px;
+  }
+
+  @include _992 {
+    margin-left: 0;
+  }
+
+  @include _816 {
+    width: 95%;
+  }
+
+  @include _596 {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.product-order input[type="number"] {
+  width: 52px;
+  height: 38px;
+  font-family: inherit;
+  font-size: 25px;
+  text-align: center;
+  padding: 3px 5px;
+  border: 1px solid #c1afa8;
+}
+
+.product-order__list--amount p {
+  font-size: 30px;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding-right: 150px;
+
+  @include _767 {
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 0;
+  }
+
+  @include _596 {
+    font-size: 24px;
+  }
+}
+
+.product-order__byn {
+  color: #000000;
+}
+
+.product-order__price {
+  @include _596 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    padding-left: 20px;
+  }
+}
+
+.product-order__count {
+  @include _596 {
+    margin-bottom: 25px;
+  }
+}

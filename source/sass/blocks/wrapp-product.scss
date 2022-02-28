@@ -1,0 +1,12 @@
+.wrapp-product {
+  display: flex;
+  padding-top: 52px;
+
+  @include _1370 {
+    display: block;
+  }
+
+  @include _596 {
+    padding-top: 10px;
+  }
+}

@@ -1,0 +1,74 @@
+.info-shop {
+
+}
+
+.info-shop h3 {
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 300;
+  color: #c58e4c;
+}
+
+.info-shop__list {
+  width: 280px;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.info-shop__list li {
+  margin-bottom: 12px;
+}
+
+.info-shop__list a {
+  color: #ffffff;
+}
+
+.info-shop__social {
+  display: flex;
+  margin-top: 25px;
+}
+
+.info-shop__social a {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-size: 15px;
+  color: #c58e4c;
+  text-decoration: none;
+}
+
+.info-shop__social img {
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+}
+
+.info-shop__wrap {
+  width: 70%;
+}
+
+.info-shop__wrap > ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info-shop__wrap ul > li {
+  width: 33.33%;
+  margin-right: 40px;
+}
+
+.info-shop__tel {
+  margin-top: 34px;
+}
+
+.info-shop__tel p {
+  font-family: inherit;
+  font-size: 17px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.info-shop__tel span {
+  font-weight: 700;
+}

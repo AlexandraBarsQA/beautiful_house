@@ -5,3 +5,19 @@
   font-weight: 300;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Light0.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Light0.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold0.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Bold0.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}

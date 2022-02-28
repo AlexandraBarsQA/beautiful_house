@@ -1,0 +1,36 @@
+.nav-crumbs {
+  display: inline;
+  padding-top: 20px;
+
+  @include _596 {
+    margin-left: -8px;
+  }
+
+  @include _596 {
+    display: none;
+  }
+}
+
+.nav-crumbs ul:first-child {
+  padding-top: 20px;
+}
+
+.nav-crumbs li {
+  color: #c58e4c;
+}
+
+.nav-crumbs a {
+  font-family: inherit;
+  font-size: 15px;
+  color: #c58e4c;
+  text-decoration: underline;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+a.nav-crumbs__link-active {
+  color: #000000;
+  text-decoration: none;
+  cursor: default;
+}
